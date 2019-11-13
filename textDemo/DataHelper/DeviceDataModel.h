@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithQueryResult:(Byte *)bytes;
 
-- (Byte)getBytes;
+- (NSData *)getBytesData;
 
 
 @end

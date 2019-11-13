@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BE0419C0237C1977004FD346 /* SocketService.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0419BF237C1977004FD346 /* SocketService.m */; };
 		BE330CD52376D24000BD316C /* DeviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE330CD42376D24000BD316C /* DeviceDataModel.m */; };
-		BEC525C8236B1FDC00AAF4EB /* TCPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC525C7236B1FDC00AAF4EB /* TCPViewController.m */; };
 		E97911981D95318600132EFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E97911971D95318600132EFC /* main.m */; };
 		E979119B1D95318600132EFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E979119A1D95318600132EFC /* AppDelegate.m */; };
 		E979119E1D95318600132EFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E979119D1D95318600132EFC /* ViewController.m */; };
@@ -18,10 +17,8 @@
 		E97911A61D95318600132EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97911A41D95318600132EFC /* LaunchScreen.storyboard */; };
 		E97911B11D95318600132EFC /* textDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E97911B01D95318600132EFC /* textDemoTests.m */; };
 		E97911BC1D95318600132EFC /* textDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E97911BB1D95318600132EFC /* textDemoUITests.m */; };
-		E97911D51D95319B00132EFC /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = E97911CA1D95319B00132EFC /* Documentation.html */; };
 		E97911D61D95319B00132EFC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E97911CC1D95319B00132EFC /* GCDAsyncSocket.m */; };
 		E97911D71D95319B00132EFC /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E97911CE1D95319B00132EFC /* GCDAsyncUdpSocket.m */; };
-		E9FD55AF1D97D74F00F0E720 /* SendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD55AE1D97D74F00F0E720 /* SendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +43,6 @@
 		BE0419BF237C1977004FD346 /* SocketService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketService.m; sourceTree = "<group>"; };
 		BE330CD32376D24000BD316C /* DeviceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceDataModel.h; sourceTree = "<group>"; };
 		BE330CD42376D24000BD316C /* DeviceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceDataModel.m; sourceTree = "<group>"; };
-		BEC525C6236B1FDC00AAF4EB /* TCPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPViewController.h; sourceTree = "<group>"; };
-		BEC525C7236B1FDC00AAF4EB /* TCPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPViewController.m; sourceTree = "<group>"; };
 		E97911931D95318600132EFC /* textDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97911971D95318600132EFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E97911991D95318600132EFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,13 +59,10 @@
 		E97911B71D95318600132EFC /* textDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97911BB1D95318600132EFC /* textDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textDemoUITests.m; sourceTree = "<group>"; };
 		E97911BD1D95318600132EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E97911CA1D95319B00132EFC /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
 		E97911CB1D95319B00132EFC /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		E97911CC1D95319B00132EFC /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		E97911CD1D95319B00132EFC /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		E97911CE1D95319B00132EFC /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		E9FD55AD1D97D74F00F0E720 /* SendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendViewController.h; sourceTree = "<group>"; };
-		E9FD55AE1D97D74F00F0E720 /* SendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +138,6 @@
 				E979119A1D95318600132EFC /* AppDelegate.m */,
 				E979119C1D95318600132EFC /* ViewController.h */,
 				E979119D1D95318600132EFC /* ViewController.m */,
-				E9FD55AD1D97D74F00F0E720 /* SendViewController.h */,
-				E9FD55AE1D97D74F00F0E720 /* SendViewController.m */,
-				BEC525C6236B1FDC00AAF4EB /* TCPViewController.h */,
-				BEC525C7236B1FDC00AAF4EB /* TCPViewController.m */,
 				E979119F1D95318600132EFC /* Main.storyboard */,
 				E97911A21D95318600132EFC /* Assets.xcassets */,
 				E97911A41D95318600132EFC /* LaunchScreen.storyboard */,
@@ -188,7 +176,6 @@
 		E97911C91D95319B00132EFC /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				E97911CA1D95319B00132EFC /* Documentation.html */,
 				E97911CB1D95319B00132EFC /* GCDAsyncSocket.h */,
 				E97911CC1D95319B00132EFC /* GCDAsyncSocket.m */,
 				E97911CD1D95319B00132EFC /* GCDAsyncUdpSocket.h */,
@@ -305,7 +292,6 @@
 				E97911A61D95318600132EFC /* LaunchScreen.storyboard in Resources */,
 				E97911A31D95318600132EFC /* Assets.xcassets in Resources */,
 				E97911A11D95318600132EFC /* Main.storyboard in Resources */,
-				E97911D51D95319B00132EFC /* Documentation.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FD55AF1D97D74F00F0E720 /* SendViewController.m in Sources */,
 				E97911D61D95319B00132EFC /* GCDAsyncSocket.m in Sources */,
 				E97911D71D95319B00132EFC /* GCDAsyncUdpSocket.m in Sources */,
-				BEC525C8236B1FDC00AAF4EB /* TCPViewController.m in Sources */,
 				E979119E1D95318600132EFC /* ViewController.m in Sources */,
 				E979119B1D95318600132EFC /* AppDelegate.m in Sources */,
 				E97911981D95318600132EFC /* main.m in Sources */,

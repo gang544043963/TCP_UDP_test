@@ -14,7 +14,7 @@
     static DeviceDataModel *model = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        model = [[self alloc] init];
+        model = [[DeviceDataModel alloc] init];
     });
     return model;
 }
@@ -65,13 +65,12 @@
             UInt8 data10 = (UInt8)(bytes[10] & 0xFF);
             self.nonPolar = data10;
             
-            [self getBytes];
         }
     }
     return self;
 }
 
-- (Byte)getBytes {
+- (NSData *)getBytesData {
     
     UInt8 data3 =
     (self.superStrong & 0x01) << 7
@@ -109,13 +108,13 @@
     UInt8 appVersion = 0x01; //手机客户端程序版本号
     UInt8 msg = 0x00; //功能信息
     
-    Byte payload[] = {protocalVersion, appVersion, msg, data3, data4, data5, data6, data7, data8, data9, data10, 0x00, 0x00, 0x00, 0x00, 0x00};
+    Byte payload[16] = {protocalVersion, appVersion, msg, data3, data4, data5, data6, data7, data8, data9, data10, 0x00, 0x00, 0x00, 0x00, 0x00};
     
     for (int i = 0; i < 16; i++) {
         NSLog(@"---------%02x", payload[i]);
     }
-    
-    return payload;
+    NSData *data = [NSData dataWithBytes:payload length:16];
+    return data;
 }
 
 
